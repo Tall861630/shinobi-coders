@@ -1,0 +1,185 @@
+/* Général */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    text-align: center; /* Centrer tout le texte par défaut */
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between; /* Ajuste la position du logo et du menu */
+    align-items: center;
+    background-color: #d32f2f; /* Rouge sombre */
+    padding: 15px 30px; /* Ajout d'espacement pour l'esthétique */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre le logo et le slogan */
+}
+
+header .logo a { 
+    display: flex;  /* Rendre le lien un flex container pour aligner son contenu */
+    align-items: center;  /* Centrer le logo dans le lien */
+    text-decoration: none; /* Enlever le soulignement du lien */
+}
+
+header .logo img {
+    max-height: 80px; /* Taille du logo */
+    width: auto;
+}
+
+header .logo .slogan {
+    font-style: italic;
+    font-size: 1.2em;
+    color: white; /* Contraste avec le fond rouge */
+    margin-left: 10px; /* Un peu d'espace entre le logo et le slogan */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments de navigation */
+    gap: 20px; /* Espacement entre les liens */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px; /* Coins arrondis */
+    transition: background-color 0.3s ease; /* Animation fluide */
+}
+
+nav ul li a:hover {
+    background-color: #b71c1c; /* Rouge plus sombre au survol */
+}
+
+/* Corps principal */
+main {
+    padding: 20px;
+    text-align: center; /* Centrer le texte de cette section */
+}
+
+h1, h2 {
+    color: #d32f2f; /* Rouge sombre pour les titres */
+}
+
+p, ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px; /* Limiter la largeur du texte */
+}
+
+section {
+    margin: 40px 0;
+}
+
+/* Formulaire de contact */
+#formulaire-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#formulaire-contact label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#formulaire-contact input,
+#formulaire-contact textarea {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formulaire-contact input[type="text"],
+#formulaire-contact input[type="email"],
+#formulaire-contact textarea {
+    margin-bottom: 20px;
+}
+
+#formulaire-contact button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #d32f2f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulaire-contact button:hover {
+    background-color: #b71c1c; /* Rouge plus sombre au survol */
+}
+
+#formulaire-contact button[type="reset"] {
+    background-color: #757575;
+}
+
+#formulaire-contact button[type="reset"]:hover {
+    background-color: #616161;
+}
+
+/* Pied de page */
+footer {
+    background-color: #b71c1c; /* Rouge sombre */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+footer .footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer .social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
